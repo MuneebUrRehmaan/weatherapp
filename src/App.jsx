@@ -6,7 +6,7 @@ import {fetchWeatherData} from './components/weatherservice.js'
 const App = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [city, setCity] = useState('Madrid');
+  const [city, setCity] = useState('Karachi');
 
   const loadWeather = useCallback(async (searchCity) => {
     setLoading(true);
