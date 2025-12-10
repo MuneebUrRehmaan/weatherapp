@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import MainContent from './components/MainContent.jsx';
 import WeeklyForecast from './components/WeeklyForecast';
-import {fetchWeatherData} from './services/WeatherService.js'
+import {fetchWeatherData} from './components/weatherservice.js'
 
 const App = () => {
   const [weatherData, setWeatherData] = useState(null);

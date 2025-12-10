@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Search, Thermometer, Wind, Droplets, Sun } from 'lucide-react';
 import WeatherIcon from './WeatherIcon';
-import { searchCities } from '../services/WeatherService';
+import { searchCities } from './weatherservice';
 
 const MainContent = ({ weather, onSearch, loading }) => {
     const [searchTerm, setSearchTerm] = useState('');
