@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+        --color-dashboard-bg: #0B131E;
+        --color-dashboard-card: #202B3B;
+        --color-dashboard-sidebar: #0B131E;
+        --color-dashboard-accent: #0095FF;
+        --color-dashboard-text: #DEE4EA;
+        --color-dashboard-muted: #9399A2;
+        --font-sans: Inter, sans-serif;
+      }
