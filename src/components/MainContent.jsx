@@ -55,7 +55,7 @@ const MainContent = ({ weather, onSearch, loading }) => {
     if (!weather && loading) {
         return (
             <div className="flex-1 p-6 flex items-center justify-center">
-                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-dashboard-accent"></div>
+                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-l-2 border-dashboard-accent"></div>
             </div>
         );
     }
@@ -86,7 +86,7 @@ const MainContent = ({ weather, onSearch, loading }) => {
 
                 {/* Autocomplete Dropdown */}
                 {showSuggestions && suggestions.length > 0 && (
-                    <div className="absolute top-full left-0 right-0 mt-2 bg-dashboard-card border border-dashboard-bg rounded-xl shadow-xl z-50 overflow-hidden">
+                    <div className="absolute top-full left-0 right-0 mt-2 bg-dashboard-card border border-dashboard-bg rounded shadow-xl z-50 overflow-hidden">
                         {suggestions.map((city, index) => (
                             <div
                                 key={`${city.lat}-${city.lon}-${index}`}
@@ -130,7 +130,7 @@ const MainContent = ({ weather, onSearch, loading }) => {
             </div>
 
             {/* Hourly Forecast */}
-            <div className="bg-dashboard-card/90 rounded p-8">
+            <div className="bg-dashboard-card/90 rounded p-8 ">
                 <h3 className="text-dashboard-muted uppercase text-xs font-bold tracking-wider mb-4">
                     Today's Forecast
                 </h3>
@@ -154,7 +154,7 @@ const MainContent = ({ weather, onSearch, loading }) => {
             </div>
 
             {/* Air Conditions */}
-            <div className="bg-dashboard-card/90 rounded p-6 ">
+            <div className="bg-dashboard-card/90 rounded p-6">
                 <div className="flex justify-between items-center mb-4">
                     <h3 className="text-dashboard-muted uppercase text-xs font-bold tracking-wider">
                         Air Conditions

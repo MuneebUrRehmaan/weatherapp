@@ -53,7 +53,7 @@ const App = () => {
         {/* Weekly Forecast */}
         <div className="w-full lg:w-[350px] shrink-0 h-full">
           {loading ? (
-            <div className="bg-dashboard-card/90 rounded-[30px] p-6 h-full flex items-center justify-center">
+            <div className="bg-dashboard-card/90 rounded p-6 h-full flex items-center justify-center">
               <span className="text-dashboard-muted">Loading forecast...</span>
             </div>
           ) : (
