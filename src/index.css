@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @theme {
         --color-dashboard-bg: #0B131E;
         --color-dashboard-card: #202B3B;
@@ -9,3 +10,10 @@
         --color-dashboard-muted: #9399A2;
         --font-sans: Inter, sans-serif;
       }
+
+.bg-img{
+
+  background: url('./assets/bg.png') center no-repeat;
+  background-size: cover;
+  
+}

@@ -30,7 +30,7 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-dashboard-bg flex flex-col lg:flex-row p-4 gap-6 overflow-hidden">
+    <div className="min-h-screen bg-img  flex flex-col lg:flex-row p-4 gap-6 overflow-hidden">
       {/* Sidebar */}
       {/* <Sidebar className="hidden lg:flex w-24 shrink-0" /> */}
       
@@ -53,7 +53,7 @@ const App = () => {
         {/* Weekly Forecast */}
         <div className="w-full lg:w-[350px] shrink-0 h-full">
           {loading ? (
-            <div className="bg-dashboard-card rounded-[30px] p-6 h-full flex items-center justify-center">
+            <div className="bg-dashboard-card/90 rounded-[30px] p-6 h-full flex items-center justify-center">
               <span className="text-dashboard-muted">Loading forecast...</span>
             </div>
           ) : (

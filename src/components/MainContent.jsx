@@ -73,7 +73,7 @@ const MainContent = ({ weather, onSearch, loading }) => {
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
                         onFocus={() => searchTerm.length >= 3 && setShowSuggestions(true)}
-                        className="w-full bg-dashboard-card text-white text-sm rounded-xl py-3 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-dashboard-accent/50 placeholder-dashboard-muted"
+                        className="w-full bg-dashboard-card/90 text-white text-sm rounded py-3 pl-4 pr-10  focus:outline focus:outline-dashboard-accent/50 placeholder-dashboard-muted"
                     />
 
                     <button
@@ -130,7 +130,7 @@ const MainContent = ({ weather, onSearch, loading }) => {
             </div>
 
             {/* Hourly Forecast */}
-            <div className="bg-dashboard-card rounded-[30px] p-6">
+            <div className="bg-dashboard-card/90 rounded p-8">
                 <h3 className="text-dashboard-muted uppercase text-xs font-bold tracking-wider mb-4">
                     Today's Forecast
                 </h3>
@@ -154,7 +154,7 @@ const MainContent = ({ weather, onSearch, loading }) => {
             </div>
 
             {/* Air Conditions */}
-            <div className="bg-dashboard-card rounded-[30px] p-6 ">
+            <div className="bg-dashboard-card/90 rounded p-6 ">
                 <div className="flex justify-between items-center mb-4">
                     <h3 className="text-dashboard-muted uppercase text-xs font-bold tracking-wider">
                         Air Conditions
