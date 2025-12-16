@@ -63,9 +63,9 @@ const MainContent = ({ weather, onSearch, loading }) => {
     if (!weather) return null;
 
     return (
-        <div className="flex-1 flex flex-col gap-6 p-1 md:p-0 w-full">
+        <div className="flex-1 flex flex-col gap-6  w-full">
             {/* Search Bar */}
-            <div className="relative w-full m-2" ref={searchRef}>
+            <div className="relative w-full" ref={searchRef}>
                 <form onSubmit={handleSearchSubmit} className="relative w-full">
                     <input
                         type="text"
